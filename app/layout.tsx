@@ -1,15 +1,15 @@
 import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css';
-import type { Metadata, Viewport } from 'next';
-import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
-import localFont from 'next/font/local'
+import { GeistSans } from 'geist/font/sans';
+import type { Metadata, Viewport } from 'next';
+import localFont from 'next/font/local';
 
 const ClashDisplay = localFont({
   src: '../assets/fonts/ClashDisplay-Variable.woff2',
   variable: '--font-clash-display',
-})
+});
 
 export const metadata: Metadata = {
   title: 'pixelpen-prestige',
