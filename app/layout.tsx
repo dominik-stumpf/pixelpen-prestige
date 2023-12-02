@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn([
-          'font-sans antialiased min-h-full bg-background text-foreground selection:bg-foreground selection:text-background accent-primary',
+          'min-h-full bg-background font-sans text-foreground antialiased accent-primary selection:bg-foreground selection:text-background',
           GeistSans.variable,
           GeistMono.variable,
           ClashDisplay.variable,
