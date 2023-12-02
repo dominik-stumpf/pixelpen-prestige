@@ -2,6 +2,14 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { cn } from '@/lib/utils';
 import '@/styles/globals.css';
 import type { Metadata, Viewport } from 'next';
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
+import localFont from 'next/font/local'
+
+const ClashDisplay = localFont({
+  src: '../assets/fonts/ClashDisplay-Variable.woff2',
+  variable: '--font-clash-display',
+})
 
 export const metadata: Metadata = {
   title: 'pixelpen-prestige',
@@ -33,8 +41,9 @@ export default function RootLayout({
       <body
         className={cn([
           'font-sans antialiased min-h-full bg-background text-foreground selection:bg-foreground selection:text-background accent-primary',
-          // GeistSans.variable,
-          // GeistMono.variable,
+          GeistSans.variable,
+          GeistMono.variable,
+          ClashDisplay.variable,
         ])}
       >
         <ThemeProvider>{children}</ThemeProvider>
