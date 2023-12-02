@@ -1,5 +1,4 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
 
 export default function Page() {
   return (
@@ -12,21 +11,11 @@ export default function Page() {
       <div className="max-w-[70ch] text-xl [text-wrap:balance]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ex
         sed purus commodo mattis. Donec vel convallis tellus. Suspendisse
-        tincidunt massa leo, at ornare augue egestas non.
+        tincidunt massa leo.
       </div>
-      <div className="my-8 flex gap-4">
-        <Button className="text-lg uppercase" size="lg" variant="default">
-          Get Started
-        </Button>
-        <Button
-          className="space-x-2 text-lg uppercase"
-          size="lg"
-          variant="outline"
-        >
-          <span>See Demo</span>
-          <ArrowDown />
-        </Button>
-      </div>
+      <Button className="text-xl my-12 px-16 py-8 uppercase" size="lg" variant="default">
+        Let's get started
+      </Button>
       <div className="aspect-video h-full w-[70vw] rounded-xl border bg-card" />
     </div>
   );
